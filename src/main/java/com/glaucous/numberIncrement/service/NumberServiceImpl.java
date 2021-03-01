@@ -27,7 +27,7 @@ public class NumberServiceImpl implements NumberService {
 	public  void increaseCountByOne() {
 		try{
 			
-			numberRepository.save(new Number(1,databaseComponent.getCountData().getAndIncrement()));
+			numberRepository.save(new Number(1,databaseComponent.getCountData().incrementAndGet()));
 			
 		}
 			
