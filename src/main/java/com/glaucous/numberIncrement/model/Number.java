@@ -21,7 +21,9 @@ public class Number {
 	private Integer id;
 	@Column (name="count")
 	private Integer count;
-
+	public Number() {
+		
+	}
 	public Number(Integer id,Integer count) {
 		super();
 		this.id = id;
@@ -32,8 +34,6 @@ public class Number {
 	public void setId(Integer id) 
 	{ this.id = id; }
 	 
-	public Number(int i, int j) {
-	}
 	public Integer getCount() {
 		return count;
 	}
